@@ -6,9 +6,13 @@ Live opening-status directory for South African businesses.
 
 - `/` — Home
 - `/stores` — Business directory
+- `/stores/:slug` — Store detail
 - `/pricing` — Plans & FAQ
 - `/blog` — Insights & stories
+- `/blog/:slug` — Article
 - `/contact` — Contact form
+- `/privacy` — Privacy Policy
+- `/terms` — Terms of Use
 
 ## Brand colours
 
@@ -26,3 +30,7 @@ npm run dev
 ```
 
 Open [http://127.0.0.1:5173](http://127.0.0.1:5173).
+
+## GitHub
+
+https://github.com/MeekaaeelMartin/BizStatus

@@ -63,9 +63,6 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex xl:gap-5">
-          <Link to="/contact" className="text-[0.95rem] font-medium text-white hover:text-slate-200">
-            Login
-          </Link>
           <Link
             to="/pricing"
             className="btn-press rounded-lg bg-brand-blue px-5 py-2.5 text-[0.9rem] font-semibold text-white hover:bg-blue-600"
@@ -104,13 +101,10 @@ export function Header() {
                 </Link>
               )
             })}
-            <div className="mt-3 flex flex-col gap-3 border-t border-white/10 pt-4 sm:flex-row sm:items-center">
-              <Link to="/contact" className="px-3 text-sm font-medium text-white">
-                Login
-              </Link>
+            <div className="mt-3 border-t border-white/10 pt-4">
               <Link
                 to="/pricing"
-                className="rounded-lg bg-brand-blue px-4 py-2.5 text-center text-sm font-semibold text-white"
+                className="block rounded-lg bg-brand-blue px-4 py-2.5 text-center text-sm font-semibold text-white"
               >
                 Get Started
               </Link>

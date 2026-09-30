@@ -38,10 +38,9 @@ export function StoreDetail() {
   }, [slug, store?.timeSlots])
 
   const calendar = useMemo(() => {
-    const base = new Date(2024, 9, 1) // October 2024 as in design
+    const base = new Date(2024, 9, 1)
     const d = new Date(base.getFullYear(), base.getMonth() + monthOffset, 1)
     const allDays = buildCalendarDays(d.getFullYear(), d.getMonth())
-    // Show a week window centered near selected date when on that month
     const start =
       monthOffset === selectedMonthOffset
         ? Math.max(0, Math.min(selectedDate - 4, allDays.length - 7))
